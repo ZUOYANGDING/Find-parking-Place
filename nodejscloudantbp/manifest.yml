@@ -1,0 +1,10 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Find Parking Place
+  host: Find-Parking-Place
+  disk_quota: 1024M
+  services:
+  - Find Parking Place-cloudantNoSQLDB

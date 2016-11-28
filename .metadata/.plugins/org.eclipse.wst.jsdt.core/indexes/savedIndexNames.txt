@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+/Users/zuoyangding/Documents/project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2387960638.index
+4196881598.index
+3241466974.index
+2740723183.index
+2186772328.index
+2513584141.index

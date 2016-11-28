@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="1" hostname="Cloud" id="IBM Bluemix" name="IBM Bluemix" org.eclipse.cft.org="zuoyangding" org.eclipse.cft.serverId="zuoyangding@gmail.com_zuoyangding_dev@https://api.ng.bluemix.net" org.eclipse.cft.space="dev" org.eclipse.cft.url="https://api.ng.bluemix.net" org.eclipse.cft.username="zuoyangding@gmail.com" runtime-id="IBM Bluemix Runtime" server-type="com.ibm.cftools.server" server-type-id="com.ibm.cftools.server" start-timeout="600" stop-timeout="60" timestamp="1">
+    <list key="modules" value0="Find-Parking-Place::com.ibm.cftools.nodejs.core.internal.modules.NodejsModuleFactory:Find-Parking-Place::com.ibm.cftools.nodejs.module::1.0"/>
+  </server>
+</servers>

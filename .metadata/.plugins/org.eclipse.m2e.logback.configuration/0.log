@@ -1,0 +1,56 @@
+2016-11-22 17:24:37,677 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @10461ms
+2016-11-22 17:24:37,920 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-22 17:24:37,982 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@54bff7b4{/help,null,AVAILABLE}
+2016-11-22 17:24:38,056 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4b7eaf39{HTTP/1.1}{127.0.0.1:63349}
+2016-11-22 17:24:38,059 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @10843ms
+2016-11-22 19:03:27,982 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@4b7eaf39{HTTP/1.1}{127.0.0.1:0}
+2016-11-22 19:03:27,995 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@54bff7b4{/help,null,UNAVAILABLE}
+2016-11-22 19:03:42,299 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @12965ms
+2016-11-22 19:03:42,525 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-22 19:03:42,605 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5f18130d{/help,null,AVAILABLE}
+2016-11-22 19:03:42,614 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@31c48cd1{HTTP/1.1}{127.0.0.1:64059}
+2016-11-22 19:03:42,614 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @13284ms
+2016-11-22 20:12:48,662 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@31c48cd1{HTTP/1.1}{127.0.0.1:0}
+2016-11-22 20:12:48,681 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5f18130d{/help,null,UNAVAILABLE}
+2016-11-22 20:13:32,222 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @19008ms
+2016-11-22 20:13:32,522 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-22 20:13:32,565 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5a2c956e{/help,null,AVAILABLE}
+2016-11-22 20:13:32,574 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@533b3d5f{HTTP/1.1}{127.0.0.1:65178}
+2016-11-22 20:13:32,574 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @19363ms
+2016-11-27 18:30:42,701 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@533b3d5f{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 18:30:42,715 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5a2c956e{/help,null,UNAVAILABLE}
+2016-11-27 18:30:58,922 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @14605ms
+2016-11-27 18:30:59,048 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-27 18:30:59,329 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@d30c631{/help,null,AVAILABLE}
+2016-11-27 18:30:59,344 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1c3e6bf3{HTTP/1.1}{127.0.0.1:50492}
+2016-11-27 18:30:59,361 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @15048ms
+2016-11-27 18:34:44,277 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1c3e6bf3{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 18:34:44,292 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@d30c631{/help,null,UNAVAILABLE}
+2016-11-27 18:34:57,114 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @11998ms
+2016-11-27 18:34:57,352 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-27 18:34:57,439 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4ae0fb2c{/help,null,AVAILABLE}
+2016-11-27 18:34:57,475 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@68d49184{HTTP/1.1}{127.0.0.1:50848}
+2016-11-27 18:34:57,477 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @12367ms
+2016-11-27 18:41:48,087 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@68d49184{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 18:41:48,100 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4ae0fb2c{/help,null,UNAVAILABLE}
+2016-11-27 18:42:04,814 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @11997ms
+2016-11-27 18:42:05,085 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-27 18:42:05,341 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4a026531{/help,null,AVAILABLE}
+2016-11-27 18:42:05,352 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@48c0386a{HTTP/1.1}{127.0.0.1:50884}
+2016-11-27 18:42:05,352 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @12539ms
+2016-11-27 18:57:09,519 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@48c0386a{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 18:57:09,531 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4a026531{/help,null,UNAVAILABLE}
+2016-11-27 18:58:27,712 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @25206ms
+2016-11-27 18:58:28,155 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-27 18:58:28,234 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6f9e000a{/help,null,AVAILABLE}
+2016-11-27 18:58:28,244 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@4cdddd1f{HTTP/1.1}{127.0.0.1:51064}
+2016-11-27 18:58:28,245 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @25743ms
+2016-11-27 21:07:12,908 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@4cdddd1f{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 21:07:12,920 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@6f9e000a{/help,null,UNAVAILABLE}
+2016-11-27 21:07:37,053 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @17911ms
+2016-11-27 21:07:37,271 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.2.13.v20150730
+2016-11-27 21:07:37,351 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5e83b5f{/help,null,AVAILABLE}
+2016-11-27 21:07:37,440 [Start Help Server] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@27e45bad{HTTP/1.1}{127.0.0.1:52598}
+2016-11-27 21:07:37,443 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @18304ms
+2016-11-27 21:46:22,012 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@27e45bad{HTTP/1.1}{127.0.0.1:0}
+2016-11-27 21:46:22,034 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@5e83b5f{/help,null,UNAVAILABLE}
