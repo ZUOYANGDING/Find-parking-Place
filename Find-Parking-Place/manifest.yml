@@ -1,0 +1,6 @@
+---
+applications:
+- name: Find-Parking-Place1
+  memory: 512M
+  host: Find-Parking-Place1
+  domain: mybluemix.net
