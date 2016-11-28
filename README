@@ -1,0 +1,9 @@
+Project Name: find parking place
+Project Description: Find the free street parking place on campuse with google map. 
+                     A user can notice the locations of the free parking places which are sended by other users through google map.
+                     If any user find a parking place, he/she can notice that by google map, and if anyone searching the parking place at that time 
+Group Memebers: Zuoyang Ding    ding57@purdue.edu,
+                Siyu Jiang      jiang385@purdue.edu, 
+                Yuzhu Yang      yang961@purduee.edu
+Technology used: bluemix, node.js, html, google map API and so on
+
