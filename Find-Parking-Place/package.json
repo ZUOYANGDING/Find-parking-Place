@@ -1,8 +1,22 @@
 {
-  "name": "insert-title-here",
-  "version": "0.0.1",
-  "description": "Insert description here",
+  "name": "Find-Parking-Place",
+  "version": "0.0.2",
+  "private": true,
   "scripts": {
-   	"start": "node app.js"
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cloudant": "1.4.x",
+    "connect-multiparty": "2.0.x",
+    "ejs": "2.4.x",
+    "errorhandler": "1.4.x",
+    "express": "^4.13.4",
+    "method-override": "2.3.x",
+    "morgan": "1.6.x"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"
   }
 }
