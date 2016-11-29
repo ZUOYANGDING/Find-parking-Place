@@ -16,7 +16,30 @@
 
 // }).listen(appport);
 var express = require('express');
+var path = require('path');
+var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
+var logger = require('morgan');
+var errorHandler = require('errorhandler');
 var app = express();
 
-app.use(express.static(__dirname + '/public'));
-app.listen(3000);
+
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+app.use(logger('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(methodOverride());
+app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+
+
+
+
+
+
+app.listen(app.get('port'));
