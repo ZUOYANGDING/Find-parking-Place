@@ -16,10 +16,12 @@
 
 // }).listen(appport);
 var express = require('express');
+var routes = require('./routes');
 var path = require('path');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var logger = require('morgan');
+
 var errorHandler = require('errorhandler');
 var app = express();
 
@@ -34,6 +36,11 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 
+if ('development' == app.get('env')) {
+	app.use(errorHandler());
+}
+
+app.get('/', routes.index);
 
 
 
