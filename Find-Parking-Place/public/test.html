@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+    <title>Find Parking</title>
 <style>
 body {margin:25px;}
 @font-face {
     font-family: strangeFont;
-    src: url(crackman.ttf);
+    src: url(font/dizzyedgeDEMO.otf);
 }
 h2 {
     font-size: 2em;
     font-family: strangeFont;
 }
 div.polaroid1 {
-    position: absolute;
-    left: 60px;
+   	margin: 0 auto;
     width: 40%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -55,7 +55,7 @@ p{
 }
 </style>
     </head>
-    <body background="Purdue-Campus.jpg">
+    <body background="image/Purdue-Campus.jpg">
     <h2>Find Parking Place</h2>
     <script>
         function mymap() {
@@ -67,40 +67,38 @@ p{
             window.location.href = "contactinfo.html";
         }
     </script>
+   <script>
+        function myfind() {
+            window.location.href = "googleAPI.html";
+        }
+    </script>
         <div class="polaroid1">
-        <button type="button" onclick="myfind()">
-        <img src="boilermaker-special.jpg" alt="Norway" style="width:100%">
+        <img src="image/boilermaker-special.jpg" alt="Norway" style="width:100%">
         <div class="container">
-        <p><strong>Find!</strong></p>
+		<button type="button" onclick="myfind()"><strong>Find!</strong></button>
         </div>
-        </button>
         </div>
 
-        <div class="polaroid2">
-        <button type="button" onclick="myreport()">
-        <img src="Parking.jpg" alt="Norway" style="width:100%">
+        <div class="polaroid1">
+    
+        <img src="image/Parking.jpg" alt="Norway" style="width:100%">
         <div class="container">
-        <p><strong>Report Empty Space</strong></p>
+        <button type="button" onclick="myreport()"><strong>Report Empty Space</strong></button>
         </div>
-        </button>
         </div>
 
-        <div class="polaroid3">
-        <button type="button" onclick="mymap()">
-        <img src="857a3daab8036bcc982163d76c5273dc.jpg" alt="Norway" style="width:453px;height: 220px">
+        <div class="polaroid1">
+        <img src="image/857a3daab8036bcc982163d76c5273dc.jpg" alt="Norway" style="width:100%">
         <div class="container">
-        <p><strong>Street Parking Map</strong></p>
+        <button type="button" onclick="mymap()"><strong>Street Parking Map</strong></button>
         </div>
-        </button>
         </div>
 
-        <div class="polaroid4">
-        <button type="button" onclick="myinfo()">
-        <img src="1476994814.jpg" alt="Norway" style="width:100%">
+        <div class="polaroid1">
+        <img src="image/1476994814.jpg" alt="Norway" style="width:100%">
         <div class="container">
-        <p><strong>Contact Information</strong></p>
+        <button type="button" onclick="myinfo()"><strong>Contact Information</strong></button>
         </div>
-        </button>
         </div>
     </body>
 </html>
