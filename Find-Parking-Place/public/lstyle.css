@@ -1,0 +1,42 @@
+
+div.F {
+  top: 100px;
+
+color: rgba(241, 48, 38 , 0.60);
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+
+}
+
+div.Login {
+
+    color: rgba(20，20， 20 , 0.1);
+
+  top: 200px;
+
+  font-size: 40px;
+  line-height: 10px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+
+
+}
+
+body {
+    background: url("image/Parking.jpg") no-repeat;
+    background: 
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 30% 0%;
+
+}
+
+img {
+  width: 300px;
+  height: 200px; 
+  display: block;
+}
