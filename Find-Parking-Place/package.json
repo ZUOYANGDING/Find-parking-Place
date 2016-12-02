@@ -1,22 +1,22 @@
 {
   "name": "Find-Parking-Place",
-  "version": "0.0.2",
-  "private": true,
-  "scripts": {
-    "start": "node app.js"
-  },
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "cloudant": "1.4.x",
-    "connect-multiparty": "2.0.x",
-    "ejs": "2.4.x",
-    "errorhandler": "1.4.x",
-    "express": "^4.13.4",
-    "method-override": "2.3.x",
-    "morgan": "1.6.x"
-  },
-  "repository": {},
-  "engines": {
-    "node": "4.x"
+  "main": "app.js",
+  "dependencies" : {
+    "express" : "~4.0.0",
+    "ejs" : "~0.8.5",
+    "mongoose" : "~4.4",
+    "passport" : "~0.1.17",
+    "passport-local" : "~0.1.6",
+    "passport-facebook" : "~1.0.2",
+    "passport-twitter" : "~1.0.2",
+    "passport-google-oauth" : "~0.1.5",
+    "connect-flash" : "~0.1.1",
+    "bcrypt-nodejs" : "latest",
+
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-session": "~1.0.0"
   }
 }

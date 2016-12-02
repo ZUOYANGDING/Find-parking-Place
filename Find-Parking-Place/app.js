@@ -1,52 +1,33 @@
-
-/**
- * Generated Node.js application that can run on IBM Bluemix
- */
-
-// var http = require("http");
-
-// var appport = process.env.VCAP_APP_PORT || 8888;
-
-// http.createServer(function(request, response) {
-
-//     response.writeHead(200, {"Content-Type": "text/plain"});
-//     response.write("Generated Node.js application that runs on IBM Bluemix\n");
-//     response.write("hahaha test");
-//     response.end();	
-
-// }).listen(appport);
 var express = require('express');
-var routes = require('./routes');
-var path = require('path');
-var bodyParser = require('body-parser');
-var methodOverride = require('method-override');
-var logger = require('morgan');
-
-var errorHandler = require('errorhandler');
 var app = express();
+var port = process.env.PORT || 3000;
+var mongoose = require('mongoose');
+var passport = require('passport');
+var flash = require('connect-flash');
+var path = require('path');
+var morgan = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var session = require('express-session');
 
 
-app.set('port', process.env.PORT || 3000);
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
-app.use(logger('dev'));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-app.use(methodOverride());
+var configDB = require('./config/database.js');
+
+mongoose.connect(configDB.url);
+require('./config/passport')(passport);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(morgan('dev'));
+app.use(cookieParser());
+app.use(bodyParser());
 
-if ('development' == app.get('env')) {
-	app.use(errorHandler());
-}
+app.set('view engine', 'ejs');
 
-app.get('/', routes.index);
+app.use(session({secret: 'ggend'}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(flash());
 
+require('./app/routes.js')(app, passport);
 
-
-
-
-
-
-
-app.listen(app.get('port'));
+app.listen(port);
+console.log('here is the port' + port);
