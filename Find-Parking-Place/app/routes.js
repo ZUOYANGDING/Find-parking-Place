@@ -29,9 +29,18 @@ module.exports = function(app, passport) {
 
     app.post('/login', passport.authenticate('local-login', {
         successRedirect : '/test.html', // redirect to the secure profile section
-        failureRedirect : '/login.html', // redirect back to the signup page if there is an error
+        failureRedirect : '/login.html', // redirect back to the login page if there is an error
         failureFlash : true // allow flash messages
     }));
+
+    app.post('/report', function(req, res) {
+        res.send("position has been accept");
+        console.log(req.body.lat);
+        console.log(req.body.lng);
+        
+    });
+
+
 
 
 
