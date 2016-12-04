@@ -54,13 +54,15 @@
                             lat : response[i].coordinate[0],
                             lng : response[i].coordinate[1]
                         }
-                        var infoWindow = new google.maps.InfoWindow({map: map});
-                        infoWindow.setContent('parking place');
-                        infoWindow.setPosition(place);
+                        //var infoWindow = new google.maps.InfoWindow({map: map});
+                        //infoWindow.setContent('parking place');
+                        //infoWindow.setPosition(place);
+                        var marker = new google.maps.Marker({position: place, map: map, title: 'Empty Space'});
+        
                     }
                 }
             });
-            infoWindow.setContent('Your current Location');
+            infoWindow.setContent('Your Current Location');
             map.setCenter(pos);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
