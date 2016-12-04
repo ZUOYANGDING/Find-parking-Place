@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
     <title>Location</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -17,7 +19,6 @@
         padding: 0;
       }
     </style>
-  </head>
   <body>
     <div id="map"></div>
     <script>
@@ -42,6 +43,23 @@
             };
 
             infoWindow.setPosition(pos);
+            $.ajax({
+                type: "GET",
+                url: '/find',
+                data: {type: [Number], index: '2d'},
+                success: function(response) {
+                    console.log(response);
+                    for (var i=0; i<response.length; i++) {
+                        var place = {
+                            lat : response[i].coordinate[0],
+                            lng : response[i].coordinate[1]
+                        }
+                        var infoWindow = new google.maps.InfoWindow({map: map});
+                        infoWindow.setContent('parking place');
+                        infoWindow.setPosition(place);
+                    }
+                }
+            });
             infoWindow.setContent('Your current Location');
             map.setCenter(pos);
           }, function() {

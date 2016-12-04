@@ -21,6 +21,19 @@ module.exports = function(app, passport) {
         res.redirect('/');
     });
 
+    app.get('/find', function(req, res) {
+        var Location = require('../app/models/locations.js');
+        Location.find({}, function(err, park) {
+            if (err) {
+                console.log("cannot find position");
+                res.send("These no place");
+            } else {
+                console.log(park);
+                res.send(park);
+            }
+        });
+    });
+
     app.post('/signup', passport.authenticate('local-signup', {
         successRedirect : '/login.html', // redirect to the secure profile section
         failureRedirect : '/signup.html', // redirect back to the signup page if there is an error
@@ -34,10 +47,19 @@ module.exports = function(app, passport) {
     }));
 
     app.post('/report', function(req, res) {
-        res.send("position has been accept");
+        //res.send("position has been accept");
         console.log(req.body.lat);
         console.log(req.body.lng);
-        
+        var Location = require('../app/models/locations.js');
+        var newLocation = new Location();
+        newLocation.coordinate = [req.body.lat, req.body.lng];
+        newLocation.save(function(err) {
+            if (err) {
+                res.send("position store failed");
+            } else {
+                res.send("position store success");
+            }
+        })
     });
 
 

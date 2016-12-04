@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var locationSchema =  mongoose.Schema({
     coordinate : {
-        lat    :  Number,
-        long   :  Number
+        type: [Number],
+        index: '2d'
     }
 });
 
